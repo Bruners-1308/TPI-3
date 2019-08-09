@@ -1,0 +1,29 @@
+create database bdEscola;
+use bdEscola;
+
+create table tbAluno(
+	idAluno int primary key auto_increment
+    ,dtCadastro date
+    ,nomeAluno varchar (50)
+    ,emailAluno varchar (60)
+    ,sexo varchar (10)
+
+);
+
+insert into tbAluno values (null, '2019-04-03', 'Bruna', 'bruna@email.com', 'F');
+insert into tbAluno values (null, '2019-04-03', 'Emanuelle', 'manu@email.com', 'F');
+insert into tbAluno values (null, '2019-04-03', 'Thiago', 'thiago@email.com', 'M');
+insert into tbAluno values (null, '2019-04-03', 'Luis Carlos', 'racanegra@email.com', 'M');
+insert into tbAluno values (null, '2019-04-03', 'Gabriel', 'perigo@email.com', 'M');
+
+select * from tbAluno;
+
+create table tbCurso(
+	idCurso int primary key auto_increment
+    ,curso varchar (80)
+    ,duracao varchar (20)
+);
+
+insert into tbCurso values (null, 'Desenvolvimento de Sistemas', '1500 horas');
+insert into tbCurso values (null, 'Contabilidade', '1000 horas');
+insert into tbCurso values (null, 'Cozinha', '1500 horas');
