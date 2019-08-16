@@ -1,0 +1,7 @@
+https://jsonformatter.curiousconcept.com/
+http://localhost/phpmyadmin/
+
+http://localhost/EscolaWebService/aluno-cadastrar.php?nome=Maria&email=maria@email.com&sexo=Feminino
+
+http://localhost/Evento/evento-consulta-param.php?dataEvento=09
+
