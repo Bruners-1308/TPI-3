@@ -1,0 +1,18 @@
+create database bdEvento;
+
+use bdEvento;
+
+create table tbEvento(
+	idEvento int primary key auto_increment
+    ,nomeEvento varchar (80)
+    ,dataEvento date
+    ,localEvento varchar (200)
+    ,porteEvento varchar (10)
+);
+
+insert into tbEvento values (null, 'Aniversário Chácara', '2019-08-24', 'Mairinque - SP', 'Médio');
+insert into tbEvento values (null, 'Casamento Eduardo & Monica', '2019-11-24', 'Buffet Grand São Paulo', 'Grande');
+insert into tbEvento values (null, 'Festa Infantil', '2019-09-24', 'Buffet Kids', 'Médio');
+insert into tbEvento values (null, 'Reunião de Família', '2019-10-31', 'Condomínio Residencial - SP', 'Pequeno');
+
+select * from tbEvento;
