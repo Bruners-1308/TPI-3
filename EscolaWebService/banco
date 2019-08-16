@@ -1,0 +1,17 @@
+create database bdEscola;
+
+use bdEscola;
+
+create table tbAluno(
+	 idAluno int primary key auto_increment
+	,dtCadAluno date
+	,nomeAluno varchar(40)
+	,emailAluno varchar(40)
+	,sexo varchar(40)
+);
+
+insert into tbAluno values(null,curdate(),'Ana','ana@gmail.com','feminino');
+insert into tbAluno values(null,curdate(),'João','joao@gmail.com','masculino');
+insert into tbAluno values(null,curdate(),'Maria','maria@gmail.com','feminino');
+insert into tbAluno values(null,curdate(),'Matheus','matheus@gmail.com','masculino');
+insert into tbAluno values(null,curdate(),'Danilo','danilo@gmail.com','masculino');
