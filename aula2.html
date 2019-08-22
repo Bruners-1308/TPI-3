@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<a href="innerHTML.php">Inner HTML</a>
+</head>
+<body>
+<form class="container">
+        <input  type="text" name="txNome" id="txNome" placeholder="Nome"/><br><br>
+        <input  type="text" name="txEmail" id="txEmail" placeholder="e-mail"/><br><br>
+        <input  type="text" name="txTitulo" id="txTitulo" placeholder="Titulo"/><br><br>
+        <textarea  name="txMensagem" id="txMensagem" placeholder="Mensagem"></textarea><br><br>
+	<!--
+          <input class="btn btn-primary" type="submit" value="Ver mensagem" onclick="exibirMsg()" />
+		  
+		  -->
+
+</form>
+
+<button onClick ="exibirMsg()"> Visualizar Dados </button>
+
+<p id="pNome">Nome</p>
+<p id "pEmail"> e-mail </p>
+<p id "pTit">Título </p>
+<p id "pMsg"> Mensagem </p>
+
+
+<script type="text/javascript">
+function exibirMsg() {
+	
+          var nome = document.getElementById("txNome").value;
+          var email = document.getElementById("txEmail").value;
+          var titulo = document.getElementById("txTitulo").value;
+          var mensagem = document.getElementById("txMensagem").value;
+          alert (nome+" "+email+" "+titulo+" "+mensagem);
+
+          document.getElementById("pNome").innerHTML = nome;
+          document.getElementById("pEmail").innerHTML = email;
+          document.getElementById("pAssunto").innerHTML = titulo;
+          document.getElementById("pmsg").innerHTML = mensagem;
+
+      }
+</script>
+
+</body>
+
+
+</html>
