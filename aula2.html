@@ -21,9 +21,9 @@
 <button onClick ="exibirMsg()"> Visualizar Dados </button>
 
 <p id="pNome">Nome</p>
-<p id "pEmail"> e-mail </p>
-<p id "pTit">Título </p>
-<p id "pMsg"> Mensagem </p>
+<p id="pEmail"> e-mail </p>
+<p id="pTit">Título </p>
+<p id="pMsg"> Mensagem </p>
 
 
 <script type="text/javascript">
@@ -33,12 +33,12 @@ function exibirMsg() {
           var email = document.getElementById("txEmail").value;
           var titulo = document.getElementById("txTitulo").value;
           var mensagem = document.getElementById("txMensagem").value;
-          alert (nome+" "+email+" "+titulo+" "+mensagem);
+         // alert ("nome+" "+email+" "+titulo+" "+mensagem");
 
           document.getElementById("pNome").innerHTML = nome;
           document.getElementById("pEmail").innerHTML = email;
-          document.getElementById("pAssunto").innerHTML = titulo;
-          document.getElementById("pmsg").innerHTML = mensagem;
+          document.getElementById("pTit").innerHTML = titulo;
+          document.getElementById("pMsg").innerHTML = mensagem;
 
       }
 </script>

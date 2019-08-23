@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Olá, mundo!</title>
+  </head>
+  <body>
+    <h1>Olá, mundo!</h1>
+		
+	<input type="text" name="txNúmero" id="txNumero" placeholder="Número" />		
+	
+	<button onClick="exibir()"> Visualizar dados </button>
+	
+	<p id="pNumero"> Número </p>
+	
+    
+  </body>
+</html>
+
+<script>
+
+	function exibir(){
+		var numero = document.getElementById("txNumero").value;
+		var msg;
+		if(parseInt(numero)>0){
+			msg = "Maior que 0";
+		}
+		else if(parseInt(numero)==0){
+			msg = "Igual a 0";
+		}
+		else{
+			msg = "Menor que 0";
+		}
+		
+		document.getElementById("pNumero").innerHTML = msg;		
+	}
+
+</script>
