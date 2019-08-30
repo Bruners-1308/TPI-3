@@ -76,3 +76,6 @@ function imprime() {
  
  
 }
+
+
+https://www.devmedia.com.br/orientacao-a-objetos-e-pdo-no-php/32644
